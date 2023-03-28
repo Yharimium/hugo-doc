@@ -1,0 +1,251 @@
+<!doctype html><html lang=en><head><title>Hugo 毫秒级静态 - 🗃️DC Doc</title><meta charset=utf-8><meta name=author content="文档存放"><meta name=Robots content="All"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=renderer content="webkit"><meta name=force-rendering content="webkit"><meta http-equiv=windows-target content="_top"><link rel="shortcut icon" type=image/x-icon href=../../../avatar.png><link rel=alt type=application/rss+xml href=../../../index.xml title="🗃️DC Doc"><link rel=stylesheet href=../../../_index.css><script src=../../../modules/redirector.js></script><link rel=dns-prefetch href=https://cdn.staticfile.org>
+<link rel=preconnect href=https://cdn.staticfile.org crossorigin><link rel=stylesheet href=https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.1.0/lxgwwenkaiscreen.css><script src=https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js></script><script src=https://cdn.staticfile.org/mermaid/9.4.0/mermaid.js></script><link rel=stylesheet href=../../../modules/fancybox.css><script src=../../../modules/fancybox.umd.js defer></script><script src=../../../modules/img.js defer></script><script src=../../../modules/toc.js defer></script><script src=../../../modules/codeblock.js defer></script><script src=../../../modules/mathjax.js defer></script><script src=https://cdn.staticfile.org/mathjax/2.7.7/MathJax.js defer></script>
+<script>mermaid.initialize({securityLevel:"loose",themeVariables:{fontFamily:"Cera Round Pro",fontSize:"85%"}})</script></head><body><div class=LBody><div class=Side><header class=header><a class=back href=../../../docs/><svg aria-hidden="true" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentcolor"><path fill-rule="evenodd" d="M7.78 12.53a.75.75.0 01-1.06.0L2.47 8.28a.75.75.0 010-1.06l4.25-4.25a.75.75.0 011.06 1.06L4.81 7h7.44a.75.75.0 010 1.5H4.81l2.97 2.97a.75.75.0 010 1.06z"/></svg><span>所有项目</span></a><div class=info><a class=title href=../../../docs/hugodemo/><h1 class=text>Hugo Demo</h1></a></div></header><div class=widgets><div class="widget search"><div class=search-form><input type=text class=search-input id=side-search-input placeholder autocomplete=off>
+<img class=search-icon src=../../../img/search.svg>
+<script>var $input=$("#side-search-input"),section=window.location.pathname.substring(0,6)=="/docs/"?"docs":"posts";$input.attr("placeholder",section=="docs"?"文档搜索":"博客搜索"),$input.keydown(e=>{e.keyCode==13&&window.open(`/search/?sec=${section}?key=${$input.val()}`)})</script></div></div><div class="widget tree"><details class=item open><summary class=title><a href=../../../docs/hugodemo/folder_1/>Hugo 毫秒级静态</a></summary><div class=inner><ul class=list><li><a href=../../../docs/hugodemo/folder_1/text/>text</a></li></ul></div></details></div></div><footer class=footer><div class=social></div></footer></div><div class=Main><div class="info mobile-only"><a class=avatar href=../../../><div class="bg shadow"></div><img class="bg rainbow" src=../../../img/rainbow64@3x.webp>
+<img class=avatar src=avatar.png></a>
+<a class=title href=../../../><p class="text site-title">文档存放</p><p class="sub up">该站打算用作文档存放,还在完善中</p><p class="sub dw">123456</p></a></div><div class="mobile-only sidebar-button" onclick=sidebar_button_click()><img src=../../../img/menu.svg></img>
+<script>sidebar_button_click=e=>{$(".Side")[0].classList.toggle("layout"),$(".sidebar-button")[0].classList.toggle("layout")}</script></div><div class="content markdown"><h1 class=title>Hugo 毫秒级静态</h1><span class=description></span><h2 id=#hugo-demo----win>Hugo Demo - Win
+<a class=anchor name=hugo-demo----win href=#hugo-demo----win>#</a></h2><blockquote><p><code>Hugo</code> 自称是使用 <code>Go</code>语言开发全世界最 <code>快</code>的静态博客框架</p><ul><li>2023.1.17 Hugo确实是全球最快的静态框架，它十分优秀，
+但是它的官方文档有个很大的问题就是概念递归（而且没有解释）
+<a class=md_link href=https://zhuanlan.zhihu.com/p/479344529>为什么 Hugo 的文档如此糟糕？<img class=icon src=../../../img/link.svg></a></li></ul></blockquote><h3 id=#参考>参考
+<a class=anchor name=参考 href=#%e5%8f%82%e8%80%83>#</a></h3><ul><li><p>文档</p><ul><li><a class=md_link href=https://www.gohugo.org/>Hugo 中文文档 gohugo.org<img class=icon src=../../../img/link.svg></a></li><li><a class=md_link href=https://www.gohugo.cn/>Hugo 中文网 gohugo.cn<img class=icon src=../../../img/link.svg></a></li><li><a class=md_link href=https://gohugo.io/>Hugo 官网 gohugo.io<img class=icon src=../../../img/link.svg></a></li><li><a class=md_link href=https://hugo.aiaide.com/>Hugo 中文帮助文档 hugo.aiaide.com<img class=icon src=../../../img/link.svg></a></li><li><a class=md_link href=https://hugocn.netlify.app/>Hugo 中文文档 hugocn.netlify.app<img class=icon src=../../../img/link.svg></a></li><li><a class=md_link href=https://hugo-in-action.foofun.cn/zh/docs/part1/>Hugo In Action<img class=icon src=../../../img/link.svg></a></li></ul></li></ul><h3 id=#安装>安装
+<a class=anchor name=安装 href=#%e5%ae%89%e8%a3%85>#</a></h3><ul><li><p><a class=md_link href=https://github.com/gohugoio/hugo/releases>下载安装包 gohugoio/hugo<img class=icon src=../../../img/link.svg></a></p><p><code>extened 版本</code>： 有些主题的需要利用进行 <code>SCSS/SASS</code> 构建，</p><p>如果下 <code>普通版</code>就可能会报错显示： <code>you need the extended version to build SCSS/SASS</code></p></li><li><p><a class=md_link href=http://git-scm.com/>Git 安装<img class=icon src=../../../img/link.svg></a>（可选）</p></li><li><p><a class=md_link href=https://gohugo.io/getting-started/installing/>Hugo 安装指南<img class=icon src=../../../img/link.svg></a> （基本上都是使用各个包工具安装）</p></li></ul><h3 id=#环境变量>环境变量
+<a class=anchor name=环境变量 href=#%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f>#</a></h3><p><code>此电脑 – 属性 – 高级系统设置 – 高级 – 环境变量 – Path</code></p><p>添加存放 <code>Hugo.exe</code>的文件夹路径</p><h3 id=#检查>检查
+<a class=anchor name=检查 href=#%e6%a3%80%e6%9f%a5>#</a></h3><p>查看 <code>Hugo版本</code>来检查是否安装成功</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=1><a class=lnlinks href=#1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>hugo version</span></span></code></pre></td></tr></table></div><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><p>正常返回示例： （有版本号）</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=1><a class=lnlinks href=#1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-diff data-lang=diff><span class=line><span class=cl><span class=gi>+ hugo v0.108.0-a0d64a46e36dd2f503bfd5ba1a5807b900df231d windows/amd64 BuildDate=2022-12-06T13:37:56Z VendorInfo=gohugoio
+</span></span></span></code></pre></td></tr></table></div><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><h3 id=#步骤>步骤
+<a class=anchor name=步骤 href=#%e6%ad%a5%e9%aa%a4>#</a></h3><ol><li><p>新建自定义文件夹</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=1><a class=lnlinks href=#1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>hugo new site blog</span></span></code></pre></td></tr></table></div><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><p>新建完成的文件夹目录树如下：</p><div class=highlight><pre tabindex=0><code>.
+├── archetypes
+│   └── default.md # 默认生成格式
+├── config.toml # 配置文件
+├── content # 存放Markdown文件
+├── layouts # 页面结构
+├── static # 静态资源
+└── themes # 主题</code></pre><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><blockquote><p>其中 <code>config.toml</code> # 配置文件的内容一般默认如下</p><div class=highlight><pre tabindex=0><code>baseURL               = &#34;https://127.0.0.1:1313&#34;
+languageCode          = &#34;zh-CN&#34;
+title                 = &#34;站点标题&#34;
+theme                 = &#34;主题&#34;
+# 解决Github Page的CSS、JS丢失
+# remote_theme          = &#34;minima&#34; 
+preserveTaxonomyNames = true
+disablePathToLower    = true
+hasCJKLanguage        = true</code></pre><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><p><code>Hugo</code>以前旧主题采用 <code>.yml</code>文件，新版大多改用 <code>.toml</code>文件，以及 <code>多文件</code>配置</p><div class=highlight><pre tabindex=0><code>config
+└─ _default
+    ├─ config.toml
+    ├─ menus.toml
+    └─ params.toml</code></pre><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div></blockquote></li><li><p>Hugo并没有默认主题，需要自己去选<a class=md_link href=https://themes.gohugo.io/>官方主题列表<img class=icon src=../../../img/link.svg></a></p><p>此处<a class=md_link href=https://www.gohugo.cn/getting-started/quick-start/>快速入门教程<img class=icon src=../../../img/link.svg></a>使用的是 <a class=md_link href=https://github.com/spf13/hyde>hyde主题<img class=icon src=../../../img/link.svg></a> 作为示例。</p><blockquote><p><code>hyde主题</code>部署的站点参考此： <a class=md_link href=https://ichochy.com/posts/20200802.html>创建Hugo+Github Pages博客<img class=icon src=../../../img/link.svg></a></p></blockquote><p>先下载主题并将其添加到站点的 <code>theme</code> 目录中：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=1><a class=lnlinks href=#1>1</a>
+</span><span class=lnt id=2><a class=lnlinks href=#2>2</a>
+</span><span class=lnt id=3><a class=lnlinks href=#3>3</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>cd</span> blog
+</span></span><span class=line><span class=cl>git init
+</span></span><span class=line><span class=cl>git submodule add https://github.com/spf13/hyde.git themes/hyde</span></span></code></pre></td></tr></table></div><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><blockquote><p><em>非 git 用户请注意：</em></p><ul><li>如果没有安装 git，从以下地址下载 此<a class=md_link href=https://github.com/budparr/gohugo-theme-ananke/archive/master.zip>Ananke主题的最新版本<img class=icon src=../../../img/link.svg></a></li><li>解压 .zip 文件，获得 <code>gohugo-theme-ananke-master</code> 目录。</li><li>将该目录重命名为 <code>ananke</code>，并将其移动到 <code>themes/</code> 目录。</li></ul></blockquote><p>接着将主题添加到站点的配置文件中：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=1><a class=lnlinks href=#1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>echo</span> <span class=s1>&#39;theme = &#34;hyde&#34;&#39;</span> &gt;&gt; config.toml</span></span></code></pre></td></tr></table></div><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div></li><li><p>新建文章</p><p>使用 <code>new</code> 命令辅助工作（例如添加标题和日期）</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=1><a class=lnlinks href=#1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>hugo new posts/A.md</span></span></code></pre></td></tr></table></div><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div></li><li><p>启动 Hugo 服务器</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=1><a class=lnlinks href=#1>1</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>hugo server --buildFuture</span></span></code></pre></td></tr></table></div><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div></li></ol><h2 id=#部署到github>部署到Github
+<a class=anchor name=部署到github href=#%e9%83%a8%e7%bd%b2%e5%88%b0github>#</a></h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=1><a class=lnlinks href=#1>1</a>
+</span><span class=lnt id=2><a class=lnlinks href=#2>2</a>
+</span><span class=lnt id=3><a class=lnlinks href=#3>3</a>
+</span><span class=lnt id=4><a class=lnlinks href=#4>4</a>
+</span><span class=lnt id=5><a class=lnlinks href=#5>5</a>
+</span><span class=lnt id=6><a class=lnlinks href=#6>6</a>
+</span><span class=lnt id=7><a class=lnlinks href=#7>7</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>hugo
+</span></span><span class=line><span class=cl>cd public
+</span></span><span class=line><span class=cl>git init
+</span></span><span class=line><span class=cl>git remote add origin git@github.com:用户名/用户名.github.io.git
+</span></span><span class=line><span class=cl>git add .
+</span></span><span class=line><span class=cl>git commit -m &#39;init&#39;
+</span></span><span class=line><span class=cl>git push -f --set-upstream origin master</span></span></code></pre></td></tr></table></div><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><h2 id=#github-action>Github Action
+<a class=anchor name=github-action href=#github-action>#</a></h2><p><strong>区别</strong></p><blockquote><p>手动部署到 <code>Github Pages</code>流程:</p><ul><li>使用Hugo生成静态网页，将静态网页 <code>push</code>到建好的 <code>Github Pages</code>的 <code>Repo</code> 中，一般是 <code>&lt;username>/&lt;username>.github.io</code></li></ul><p>自动部署 <code>Github Pages</code>。</p><ul><li>本地新建文章，<code>push</code>到 <code>Github</code>仓库的 <code>master</code>分支。<code>master</code>分支存放博客文章的源码。</li><li><code>push</code> 操作自动触发预先配置的 <code>Actions</code>。</li><li><code>GitHub Action</code>自动执行 <code>yml</code>文件中的"<code>action</code>"，构建打包，推送至 <code>gh-pages repo</code>。</li></ul></blockquote><h3 id=#存档>存档
+<a class=anchor name=存档 href=#%e5%ad%98%e6%a1%a3>#</a></h3><ul><li><p><code>.github/workflows/github-pages.yml</code>展示</p><blockquote><p><code>同仓库</code>下的 <code>master</code>分支 <code>输出</code>到 <code>gh-pages</code>分支</p></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=1><a class=lnlinks href=#1> 1</a>
+</span><span class=lnt id=2><a class=lnlinks href=#2> 2</a>
+</span><span class=lnt id=3><a class=lnlinks href=#3> 3</a>
+</span><span class=lnt id=4><a class=lnlinks href=#4> 4</a>
+</span><span class=lnt id=5><a class=lnlinks href=#5> 5</a>
+</span><span class=lnt id=6><a class=lnlinks href=#6> 6</a>
+</span><span class=lnt id=7><a class=lnlinks href=#7> 7</a>
+</span><span class=lnt id=8><a class=lnlinks href=#8> 8</a>
+</span><span class=lnt id=9><a class=lnlinks href=#9> 9</a>
+</span><span class=lnt id=10><a class=lnlinks href=#10>10</a>
+</span><span class=lnt id=11><a class=lnlinks href=#11>11</a>
+</span><span class=lnt id=12><a class=lnlinks href=#12>12</a>
+</span><span class=lnt id=13><a class=lnlinks href=#13>13</a>
+</span><span class=lnt id=14><a class=lnlinks href=#14>14</a>
+</span><span class=lnt id=15><a class=lnlinks href=#15>15</a>
+</span><span class=lnt id=16><a class=lnlinks href=#16>16</a>
+</span><span class=lnt id=17><a class=lnlinks href=#17>17</a>
+</span><span class=lnt id=18><a class=lnlinks href=#18>18</a>
+</span><span class=lnt id=19><a class=lnlinks href=#19>19</a>
+</span><span class=lnt id=20><a class=lnlinks href=#20>20</a>
+</span><span class=lnt id=21><a class=lnlinks href=#21>21</a>
+</span><span class=lnt id=22><a class=lnlinks href=#22>22</a>
+</span><span class=lnt id=23><a class=lnlinks href=#23>23</a>
+</span><span class=lnt id=24><a class=lnlinks href=#24>24</a>
+</span><span class=lnt id=25><a class=lnlinks href=#25>25</a>
+</span><span class=lnt id=26><a class=lnlinks href=#26>26</a>
+</span><span class=lnt id=27><a class=lnlinks href=#27>27</a>
+</span><span class=lnt id=28><a class=lnlinks href=#28>28</a>
+</span><span class=lnt id=29><a class=lnlinks href=#29>29</a>
+</span><span class=lnt id=30><a class=lnlinks href=#30>30</a>
+</span><span class=lnt id=31><a class=lnlinks href=#31>31</a>
+</span><span class=lnt id=32><a class=lnlinks href=#32>32</a>
+</span><span class=lnt id=33><a class=lnlinks href=#33>33</a>
+</span><span class=lnt id=34><a class=lnlinks href=#34>34</a>
+</span><span class=lnt id=35><a class=lnlinks href=#35>35</a>
+</span><span class=lnt id=36><a class=lnlinks href=#36>36</a>
+</span><span class=lnt id=37><a class=lnlinks href=#37>37</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>github pages</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>on</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>push</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>branches</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=l>master </span><span class=w> </span><span class=c># Set a branch that will trigger a deployment</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>pull_request</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>jobs</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>deploy</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>runs-on</span><span class=p>:</span><span class=w> </span><span class=l>ubuntu-22.04</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>permissions</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>contents</span><span class=p>:</span><span class=w> </span><span class=l>write</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>concurrency</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>group</span><span class=p>:</span><span class=w> </span><span class=l>${{ github.workflow }}-${{ github.ref }}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>actions/checkout@v3</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>submodules</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>  </span><span class=c># Fetch Hugo themes (true OR recursive)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>fetch-depth</span><span class=p>:</span><span class=w> </span><span class=m>0</span><span class=w>    </span><span class=c># Fetch all history for .GitInfo and .Lastmod</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Setup Hugo</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>peaceiris/actions-hugo@v2</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>hugo-version</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;latest&#39;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>extended</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Build</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=l>hugo </span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Deploy</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>peaceiris/actions-gh-pages@v3</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>if</span><span class=p>:</span><span class=w> </span><span class=l>github.ref == &#39;refs/heads/master&#39;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>github_token</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.GITHUB_TOKEN }}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>publish_dir</span><span class=p>:</span><span class=w> </span><span class=l>./public</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>publish_branch</span><span class=p>:</span><span class=w> </span><span class=l>gh-pages</span></span></span></code></pre></td></tr></table></div><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div></li><li><p>⭐️部署到外部存储库: 参考<a class=md_link href=https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-deploy-to-external-repository-external_repository>💾external_repository<img class=icon src=../../../img/link.svg></a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=1><a class=lnlinks href=#1> 1</a>
+</span><span class=lnt id=2><a class=lnlinks href=#2> 2</a>
+</span><span class=lnt id=3><a class=lnlinks href=#3> 3</a>
+</span><span class=lnt id=4><a class=lnlinks href=#4> 4</a>
+</span><span class=lnt id=5><a class=lnlinks href=#5> 5</a>
+</span><span class=lnt id=6><a class=lnlinks href=#6> 6</a>
+</span><span class=lnt id=7><a class=lnlinks href=#7> 7</a>
+</span><span class=lnt id=8><a class=lnlinks href=#8> 8</a>
+</span><span class=lnt id=9><a class=lnlinks href=#9> 9</a>
+</span><span class=lnt id=10><a class=lnlinks href=#10>10</a>
+</span><span class=lnt id=11><a class=lnlinks href=#11>11</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Deploy</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>peaceiris/actions-gh-pages@v3</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=c># ❌deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=c># ⚠️注意 GITHUB_TOKEN 没有访问外部存储库的权限</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=c># 参考 ⭐️ 部署到外部存储库 external_repository ⬇️</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=c># https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-deploy-to-external-repository-external_repository   </span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>personal_token</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.CI_TOKEN }}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>external_repository</span><span class=p>:</span><span class=w> </span><span class=l>用户名/用户名.github.io</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>publish_branch</span><span class=p>:</span><span class=w> </span><span class=l>gh-pages  </span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>publish_dir</span><span class=p>:</span><span class=w> </span><span class=l>./public </span></span></span></code></pre></td></tr></table></div><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div></li></ul><h3 id=#部署到cloudflarehttpswwwcloudflarecomzh-cn>部署到<a class=md_link href=https://www.cloudflare.com/zh-cn>Cloudflare<img class=icon src=../../../img/link.svg></a>
+<a class=anchor name=部署到cloudflarehttpswwwcloudflarecomzh-cn href=#%e9%83%a8%e7%bd%b2%e5%88%b0cloudflarehttpswwwcloudflarecomzh-cn>#</a></h3><ul><li><a class=md_link href=https://immmmm.com/hugo-github-cloudflare/>Hugo by Github with Cloudflare Pages<img class=icon src=../../../img/link.svg></a></li><li><a class=md_link href=https://immmmm.com/hi-cloudflare/>Hi , Cloudflare Pages<img class=icon src=../../../img/link.svg></a></li><li>让 <code>CF</code> 构建 <code>Hugo</code> 需要加个 <code>环境变量</code>，指定高版本 <code>HUGO_VERSION</code> 为 <code>0.92.0</code></li></ul><h2 id=#sh脚本>sh脚本
+<a class=anchor name=sh脚本 href=#sh%e8%84%9a%e6%9c%ac>#</a></h2><h3 id=#本地预览server>本地预览server
+<a class=anchor name=本地预览server href=#%e6%9c%ac%e5%9c%b0%e9%a2%84%e8%a7%88server>#</a></h3><p>新建个 <code>.sh</code>文件，方便快速 <code>本地启动Hugo</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt id=1><a class=lnlinks href=#1>1</a>
+</span><span class=lnt id=2><a class=lnlinks href=#2>2</a>
+</span><span class=lnt id=3><a class=lnlinks href=#3>3</a>
+</span><span class=lnt id=4><a class=lnlinks href=#4>4</a>
+</span><span class=lnt id=5><a class=lnlinks href=#5>5</a>
+</span><span class=lnt id=6><a class=lnlinks href=#6>6</a>
+</span><span class=lnt id=7><a class=lnlinks href=#7>7</a>
+</span><span class=lnt id=8><a class=lnlinks href=#8>8</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl><span class=c1># ! /bin/sh</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 本地启动Demo</span>
+</span></span><span class=line><span class=cl>hugo server --disableFastRender
+</span></span><span class=line><span class=cl><span class=c1># 此处</span>
+</span></span><span class=line><span class=cl><span class=c1># --disableFastRender 启用对更改的完全重新渲染</span>
+</span></span><span class=line><span class=cl><span class=c1># --buildFuture 解决日期发布的时区问题</span>
+</span></span><span class=line><span class=cl><span class=c1># --minify 压缩生成的静态资源</span></span></span></code></pre></td></tr></table></div><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><h3 id=#提交push>提交Push
+<a class=anchor name=提交push href=#%e6%8f%90%e4%ba%a4push>#</a></h3><p><code>hugo</code> 一键打包上传 <code>github</code> ，前提是之前上传过 <code>GitHub</code> 仓库</p><p>采用 <code>windows</code> 支持的 <code>.sh</code> 可执行文件，在根目录新建一个 <code>hugo.sh</code> 文件，里面放上一些命令</p><div class=highlight><pre tabindex=0><code>hugo
+
+# cd public
+
+time=$(date &#34;+%Y-%m-%d %H:%M:%S&#34;)
+echo $time
+
+git add .
+git commit -m &#34;💾$time&#34;
+git push
+exit</code></pre><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><p>可以在文件夹双击运行 <code>hugo.sh</code>，也可以在终端输入命令。</p><div class=highlight><pre tabindex=0><code>.\hugo.sh</code></pre><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><p>省去了输入繁琐的 <code>Git</code> 上传指令，并且自动生成当前系统时间作为 <code>commit</code></p><p>上传的是整体的 <code>hugo</code> 目录，如果只想上传生成的 <code>/public</code> ，在中间加入 <code>cd public</code></p><h2 id=#屏蔽项gitignore>屏蔽项.gitignore
+<a class=anchor name=屏蔽项gitignore href=#%e5%b1%8f%e8%94%bd%e9%a1%b9gitignore>#</a></h2><div class=highlight><pre tabindex=0><code># Hugo 默认输出目录
+public/
+resources/
+
+# NPM
+node_modules/
+
+## OS Files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OSX
+.DS_Store
+
+# Linux
+.directory
+
+# Hugo
+.hugo_build.lock
+jsconfig.json</code></pre><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><h2 id=#关于-_indexmdhttpsgohugoiocontent-managementsections><a class=md_link href=https://gohugo.io/content-management/sections>关于 <code>_index.md</code><img class=icon src=../../../img/link.svg></a>
+<a class=anchor name=关于-_indexmdhttpsgohugoiocontent-managementsections href=#%e5%85%b3%e4%ba%8e-_indexmdhttpsgohugoiocontent-managementsections>#</a></h2><p>官方文档： <a class=md_link href=https://gohugo.io/content-management/sections>https://gohugo.io/content-management/sections<img class=icon src=../../../img/link.svg></a></p><ul><li>简单来说： 加了 <code>_index.md</code>的目录会被视作 <code>Section</code></li><li>部分需要借助 <code>Section</code>来实现的功能需要在指定文件夹添加 <code>_index.md</code></li></ul><div class=highlight><pre tabindex=0><code>---
+layout: index
+---</code></pre><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><h2 id=#其他内容>其他内容
+<a class=anchor name=其他内容 href=#%e5%85%b6%e4%bb%96%e5%86%85%e5%ae%b9>#</a></h2><ol><li><p>图片引用</p><ul><li><p>可参考此 <code>posts</code>结构</p><div class=highlight><pre tabindex=0><code>content
+├─ posts
+│    ├─ Hugo 毫秒级 静态框架
+│    │    └─ index.md
+│    ├─ 博文文章名
+│    │    ├─ img
+│    │    │    ├─ 图片.png
+│    │    └─ index.md
+└─ search.md</code></pre><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><table><thead><tr><th>图片路径</th><th><code>Markdown</code>写法</th></tr></thead><tbody><tr><td><code>img/example.png</code></td><td><code>![example](./img/example.png)</code></td></tr></tbody></table></li><li><p>或者直接放在 <code>static</code>文件夹内</p><table><thead><tr><th>图片路径</th><th><code>Markdown</code>写法</th></tr></thead><tbody><tr><td><code>static/example.png</code></td><td><code>![example](/example.png)</code></td></tr></tbody></table></li></ul></li><li><p>站点数据类内容</p><ul><li>谷歌分析 | <a class=md_link href=https://analytics.google.com/analytics/web>https://analytics.google.com/analytics/web<img class=icon src=../../../img/link.svg></a></li><li>谷歌SEO | <a class=md_link href=https://search.google.com/search-console>https://search.google.com/search-console<img class=icon src=../../../img/link.svg></a></li></ul></li><li><p>添加其他静态页面</p><ul><li>直接扔在 <code>static</code>静态资源文件夹内即可，用 <code>URL/文件夹名字</code>来索引</li></ul></li><li><p><a class=md_link href=https://zburu.com/archives/183.html/>支持渲染 <code>html</code> 代码<img class=icon src=../../../img/link.svg></a></p><ul><li><p>写入配置，以便在文章中插入 <code>iframe</code>, <code>video</code>, 以及其他比如 <code>summary</code>等标签</p><p>如果是 <code>config.toml</code>，加下面配置；</p><div class=highlight><pre tabindex=0><code>[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true</code></pre><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><p>如果是 <code>config.yaml</code>，加下面配置；</p><div class=highlight><pre tabindex=0><code>markup:
+  goldmark:
+    renderer:
+      unsafe: true</code></pre><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div><p>否则就会显示下面注释，自动过滤 <code>html</code> 代码。</p><div class=highlight><pre tabindex=0><code>&lt;!-- raw HTML omitted --&gt;</code></pre><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div></li></ul></li><li><p><a class=md_link href=https://blog.hly0928.com/post/hugo-post-date-issue/>Hugo 文章日期设定上的小问题<img class=icon src=../../../img/link.svg></a></p><ul><li><blockquote><p>Hugo 在生成静态页面的时候，不会生成超过当前时间的文章；而 Hugo 默认采用的是 <a class=md_link href=https://zh.wikipedia.org/wiki/%E6%A0%BC%E6%9E%97%E5%B0%BC%E6%B2%BB%E6%A8%99%E6%BA%96%E6%99%82%E9%96%93>格林尼治平时<img class=icon src=../../../img/link.svg></a> (GMT)，比北京时间 (UTC+8) 晚了 8 个小时。也就是说，当北京时间在 08:00 之前，而将文章发布日期设在当天时，Hugo 就默认不会生成这个页面。</p></blockquote><p>使用 <code>--buildFuture</code> 参数，这是比较简单的方式，只需要在用 Hugo 生成页面时加上 <code>--buildFuture</code> 参数即可，<a class=md_link href=https://gohugo.io/functions/format/>Hugo官方文档<img class=icon src=../../../img/link.svg></a> 了解更多信息。</p><p>用 Hugo 本地服务器预览页面时，也可以使用本参数：</p><div class=highlight><pre tabindex=0><code>hugo server --buildFuture</code></pre><span class=board><img class=edit src=../../../img/edit.svg>
+<img class=clipboard src=../../../img/clipboard.svg></span></div></li></ul></li></ol><div class=cards><a class=card href=../../../docs/hugodemo/folder_1/text/><span class=title>text</span>
+<span class=link>:/folder_1/text/</span></a></div><placeholder></placeholder></div></div></div></body></html>
