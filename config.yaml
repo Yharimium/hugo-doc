@@ -1,0 +1,84 @@
+title: "🗃️DC Doc"
+paginate: 8
+buildfuture: true # 解决时区问题
+relativeURLs: true # 删除此项可能会导致 css 样式表和图片不能正确加载
+
+theme:
+  - stellar
+
+markup:
+  _merge: deep # 删除此项将导致代码块渲染异常
+  tableOfContents: # 以下配置表明文章的目录将只包括 h1 ~ h4
+    startLevel: 1
+    endLevel: 4
+
+params:
+  author: 文档存放
+  avatar: /avatar.png
+  logo: /avatar.png
+
+  description:
+    - "该站打算用作文档存放,还在完善中"
+    - "123456"
+
+  notice:
+    - "高分屏建议缩放到110%"
+    - "此站采用[Stellar](https://github.com/Yharimium/hugo-stellar)"
+
+  copyright: ""
+
+  tencentUrl: true # 若为 true：在 QQ 和微信内置的浏览器中打开网站会自动跳转到安全警告页面
+  autoInvert: false # 若为 true：夜间模式自动反色
+
+  social:
+    # - name: "hugo"
+    #   url: "https://gohugo.io/"
+    #   logo: "/img/social/hugo.svg"
+    # - name: "github"
+    #   url: "https://github.com/"
+    #   logo: "/img/social/github.svg"
+    # - name: "bilibili"
+    #   url: "https://space.bilibili.com/"
+    #   logo: "/img/social/bilibili.svg"
+
+menus:
+  main:
+    - name: "⛺主页"
+      weight: 1
+      url: "/"
+      params:
+        tabs:
+          - name: "🗃️文档"
+            url: "/docs/"
+          - name: "⛺首页"
+            url: "/"
+          # - name: "分类"
+          #   url: "/categories/"
+          # - name: "标签"
+          #   url: "/tags/"
+          # - name: "归档"
+          # url: "/archives/"
+
+    - name: "🗃️文档"
+      weight: 2
+      url: "/docs/"
+      params:
+        tabs:
+          - name: "所有文档"
+            url: "/docs/"
+    # - name: "搜索"
+    #   weight: 3
+    #   url: "/search/"
+    #   params:
+    #     tabs:
+    #       # - name: "博客搜索"
+    #       #   url: "/search/?sec=posts"
+    #       - name: "文档搜索"
+    #         url: "/search/?sec=docs"
+    # - name: "关于"
+    #   weight: 4
+    #   url: "/about/"
+    #   params:
+    #     tabs:
+    #       - name: "About Hugo"
+    #         url: "/about/#about-hugo"
